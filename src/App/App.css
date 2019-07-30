@@ -1,0 +1,21 @@
+.left {
+    width: 49%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.right {
+    width: 49%;
+    display: flex;
+    height: 100vh;
+    background-color: gold;
+}
+
+.sides {
+    display: flex;
+    flex-direction: row;
+}
+

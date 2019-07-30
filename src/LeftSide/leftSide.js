@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 class LeftSide extends React.Component {
     constructor(props) {
@@ -9,14 +10,16 @@ class LeftSide extends React.Component {
     }
     description = (
         <React.Fragment>
-            <div>
-                Follow your interests.
-            </div>
-            <div>
-                Hear what people are talking about.
-            </div>
-            <div>
-                Join the conversation
+            <div className="left-text-container">
+                <div className="left-text">
+                    Follow your interests.
+                </div>
+                <div className="left-text">
+                    Hear what people are talking about.
+                </div>
+                <div className="left-text">
+                    Join the conversation
+                </div>
             </div>
         </React.Fragment>
     );
