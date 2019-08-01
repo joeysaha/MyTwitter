@@ -1,17 +1,20 @@
 .left {
-    width: 49%;
+    width: 50%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
+    align-items: center;
     height: 100vh;
-    background-color: aqua;
+    /* background-color: rgb(0x26, 0x96, 0xDD); */
+    background-color: rgba(5, 140, 213, 0.851);
 }
 
 .right {
-    width: 49%;
     display: flex;
+    width: 50%;
     height: 100vh;
-    background-color: gold;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .sides {
@@ -19,3 +22,14 @@
     flex-direction: row;
 }
 
+.magnifier {
+    background-color: transparent;
+    height: 10%;
+    width: 10%;
+}
+
+.people {
+    background-color: transparent;
+    height: 10%;
+    width: 10%;
+}

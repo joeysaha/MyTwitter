@@ -1,0 +1,32 @@
+.right-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.right-text-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aliceblue; */
+    height: 100%;
+    justify-content: center;
+}
+
+.login-div {
+    display: flex;
+}
+
+.forgot {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 20%;
+    height: 8%;
+}

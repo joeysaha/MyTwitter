@@ -13,7 +13,7 @@ class Login extends React.Component {
         <div>
             <input type="text" name="name" placeholder="Phone, email, or username" onClick={e => this.loginBoxClick(e)} />
             <input type="text" name="2ndname" placeholder="Password" />
-            <input type="submit" defaultValue="Log in"></input>
+            <input type="submit" value="Log in"></input>
             <div className="forgot">
                 Forgot Password
             </div>

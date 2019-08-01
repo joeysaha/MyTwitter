@@ -1,6 +1,8 @@
 import React from 'react';
 import '../Login/login';
 import Login from '../Login/login';
+import './styles.css';
+import Logo from '../images/twitterLogo.png'
 
 class RightSide extends React.Component {
     constructor(props) {
@@ -11,23 +13,28 @@ class RightSide extends React.Component {
     }
 
     title = (
-        <React.Fragment>
-            <h3>
+        <div className="right-text-container">
+            <img src={Logo} alt="twitter logo" className="image"></img>
+            <h3 className="welcome">
                 See what's happening in the world right now
             </h3>
-            <h5>
+            <h5 className="welcome">
                 Join Twitter today.
             </h5>
-            <button type="button">Sign Up</button>
-            <button type="button">Log in</button>
-        </React.Fragment>
+            <button type="button" className="welcome">Sign Up</button>
+            <button type="button" className="welcome">Log in</button>
+        </div>
     )
 
     render() {
         return (
             <React.Fragment>
-                <Login />
-                {this.title}
+                <div className="right-login">
+                    <div className="login-div">
+                        <Login />
+                    </div>
+                    {this.title}
+                </div>
             </React.Fragment>
         )
     }
