@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles.css';
-import MagGlass from '../images/magnifyingGlass.jpg';
-import People from '../images/people.png'
+// import MagGlass from '../images/magnifyingGlass.jpg';
+// import People from '../images/people.png';
+// import TextBubble from '../images/textBubbleModded.png';
 
 class LeftSide extends React.Component {
     constructor(props) {
@@ -13,16 +14,41 @@ class LeftSide extends React.Component {
     description = (
         <React.Fragment>
             <div className="left-text-container">
-                <img src={MagGlass} alt="magnifier" className="magnifier"></img>
-                <div className="left-text">
-                    Follow your interests.
+                <div className="img-div-container">
+                    <span className="Icon Icon--discover"></span>
+                    {/* <img src={MagGlass} alt="magnifier" className="magnifier icon"></img> */}
+                    <div className="left-text-p-s-container">
+                        <div className="left-text left-primary">
+                            Explore
+                        </div>
+                        <div className="left-text left-secondary">
+                            Get the latest Tweets, news, and videos in one place.
+                        </div>
+                    </div>
                 </div>
-                <img src={People} alt="people" className="people"></img>
-                <div className="left-text">
-                    Hear what people are talking about.
+                <div className="img-div-container">
+                    {/* <img src={People} alt="people" className="people icon"></img> */}
+                    <span className="Icon Icon--bookmark"></span>
+                    <div className="left-text-p-s-container">
+                        <div className="left-text left-primary">
+                            Bookmarks
+                        </div>
+                        <div className="left-text left-secondary">
+                            Save that interesting tweet for later.
+                        </div>
+                    </div>
                 </div>
-                <div className="left-text">
-                    Join the conversation
+                <div className="img-div-container">
+                    {/* <img src={TextBubble} alt="textBubble" className="text-bubble icon"></img> */}
+                    <span className="Icon Icon--paintbrush"></span>
+                    <div className = "left-text-p-s-container">
+                        <div className="left-text left-primary">
+                            Join the conversation.
+                        </div>
+                        <div className="left-text left-secondary">
+                            Choose from new themes and more dark mode options.
+                        </div>
+                    </div>
                 </div>
             </div>
         </React.Fragment>

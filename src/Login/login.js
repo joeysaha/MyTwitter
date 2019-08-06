@@ -10,14 +10,16 @@ class Login extends React.Component {
     }
 
     loginBlock = (
-        <div>
-            <input type="text" name="name" placeholder="Phone, email, or username" onClick={e => this.loginBoxClick(e)} />
-            <input type="text" name="2ndname" placeholder="Password" />
-            <input type="submit" value="Log in"></input>
-            <div className="forgot">
-                Forgot Password
+        <React.Fragment>
+            <div className="input-container">
+                <input type="text" className="input-name" name="name" placeholder="Phone, email, or username" onClick={e => this.loginBoxClick(e)} />
+                <input type="text" className="input-password" name="2ndname" placeholder="Password" onClick={e => this.loginBoxClick(e)}/>
+                <input type="submit" className="submit-button" value="Log in"></input>
+                <div className="forgot">
+                    Forgot password?
+                </div>
             </div>
-        </div>
+        </React.Fragment>
     )
 
     loginBoxClick = (e) => {

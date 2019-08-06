@@ -5,15 +5,14 @@
     align-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: rgb(0x26, 0x96, 0xDD); */
     background-color: rgba(5, 140, 213, 0.851);
 }
 
 .right {
     display: flex;
-    width: 50%;
+    width: 50vw;
     height: 100vh;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
 }
 
@@ -24,12 +23,39 @@
 
 .magnifier {
     background-color: transparent;
-    height: 10%;
-    width: 10%;
+    height: 5%;
+    width: 5%;
 }
 
 .people {
     background-color: transparent;
-    height: 10%;
-    width: 10%;
+    height: 5%;
+    width: 5%;
+}
+
+.text-bubble {
+    background-color: transparent;
+    height: 7%;
+    width: 7%;
+}
+
+.sign-up-button,
+.log-in-button {
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    justify-content: center;
+    border-radius: 40px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-up-button {
+    background-color: rgba(5, 140, 213, 0.851);
+    color: white;
+}
+
+.log-in-button {
+    color: rgba(5, 140, 213, 0.851);
+    background-color: white;
 }

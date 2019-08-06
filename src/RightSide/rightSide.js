@@ -15,14 +15,14 @@ class RightSide extends React.Component {
     title = (
         <div className="right-text-container">
             <img src={Logo} alt="twitter logo" className="image"></img>
-            <h3 className="welcome">
+            <h3 className="welcome see">
                 See what's happening in the world right now
             </h3>
-            <h5 className="welcome">
+            <h5 className="welcome join">
                 Join Twitter today.
             </h5>
-            <button type="button" className="welcome">Sign Up</button>
-            <button type="button" className="welcome">Log in</button>
+            <button type="button" className="sign-up-button">Sign Up</button>
+            <button type="button" className="log-in-button">Log in</button>
         </div>
     )
 
@@ -33,7 +33,9 @@ class RightSide extends React.Component {
                     <div className="login-div">
                         <Login />
                     </div>
-                    {this.title}
+                    <div className="title">
+                        {this.title}
+                    </div>
                 </div>
             </React.Fragment>
         )
