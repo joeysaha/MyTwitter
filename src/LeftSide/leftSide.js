@@ -14,6 +14,14 @@ class LeftSide extends React.Component {
     description = (
         <React.Fragment>
             <div className="left-text-container">
+                <div className="title-container">
+                    <div className="title">
+                        You’re one step away from the shiny new Twitter.com
+                    </div>
+                    <div className="sub-title">
+                        We’ve added tons of cool features, including…
+                    </div>
+                </div>
                 <div className="img-div-container">
                     <span className="Icon Icon--discover"></span>
                     {/* <img src={MagGlass} alt="magnifier" className="magnifier icon"></img> */}
